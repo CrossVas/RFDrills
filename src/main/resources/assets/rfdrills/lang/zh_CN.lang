@@ -34,7 +34,7 @@ rfdrills.shears_on.mode=剪刀模式:§a开
 rfdrills.shears_off.mode=剪刀模式:§c关
 rfdrills.5x5x5.mode=采掘模式:§a5x5x5
 rfdrills.3x3x3.mode=采掘模式:§e3x3x3
-rfdrills.1x3x1.mode=采掘模式:§a1x3x1
+rfdrills.3x3x1.mode=采掘模式:§a3x3x1
 rfdrills.1x1x1.mode=采掘模式:§c1x1x1
 
 config.general.tooltip=基本游戏配置
