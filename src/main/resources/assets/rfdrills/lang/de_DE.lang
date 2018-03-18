@@ -30,7 +30,7 @@ rfdrills.enchantable.tooltip=§aKann verzaubert werden.
 
 rfdrills.shears_on.mode=Shears: §aAn
 rfdrills.shears_off.mode=Shears: §cAus
-rfdrills.1x3x1.mode=Mode: §a1x3x1
+rfdrills.3x3x1.mode=Mode: §a3x3x1
 rfdrills.1x1x1.mode=Mode: §c1x1x1
 
 config.general.tooltip=Einstellungen ändern
