@@ -38,7 +38,7 @@ rfdrills.shears_on.mode=Tesouras: §aLigadas
 rfdrills.shears_off.mode=Tesouras: §cDesligadas
 rfdrills.5x5x5.mode=Modo: §a5x5x5
 rfdrills.3x3x3.mode=Modo: §e3x3x3
-rfdrills.1x3x1.mode=Modo: §a1x3x1
+rfdrills.3x3x1.mode=Modo: §a3x3x1
 rfdrills.1x1x1.mode=Modo: §c1x1x1
 
 config.general.tooltip=Configura opções principais
