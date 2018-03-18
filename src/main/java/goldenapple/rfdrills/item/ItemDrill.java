@@ -92,7 +92,7 @@ public class ItemDrill extends ItemTool implements IEnergyTool, IEqualityOverrid
     private int getEnergyPerUseWithMode(ItemStack stack){
         int energy = getEnergyPerUse(stack);
         if(isEmpowered(stack))
-            energy = energy * 3;
+            energy = energy * 9;
         return energy;
     }
 
@@ -135,15 +135,31 @@ public class ItemDrill extends ItemTool implements IEnergyTool, IEqualityOverrid
 
             if(isEmpowered(stack)){
                 if (BlockHelper.getCurrentMousedOverSide(player) == 0 || BlockHelper.getCurrentMousedOverSide(player) == 1) {
-                    switch(MathHelper.floor_double((player.rotationYaw * 4F) / 360F + 0.5D) & 3) { //Stolen from MineFactoryReloaded https://github.com/powercrystals/MineFactoryReloaded/blob/master/src/powercrystals/minefactoryreloaded/block/BlockConveyor.java
-                        case 0: zRadius = 1; break;
-                        case 1: xRadius = 1; break;
-                        case 2: zRadius = 1; break;
-                        case 3: xRadius = 1; break;
+                	switch(MathHelper.floor_double(BlockHelper.getCurrentMousedOverSide(player)))
+                	{
+                    case 0: 
+                      xRadius = 1; yRadius = 0; zRadius = 1; break;
+                    case 1: 
+                      xRadius = 1; yRadius = 0; zRadius = 1; break;
                     }
-                } else {
-                    yRadius = 1;
-                }
+                } else if (BlockHelper.getCurrentMousedOverSide(player) == 2 || BlockHelper.getCurrentMousedOverSide(player) == 3) {
+                    switch(MathHelper.floor_double(BlockHelper.getCurrentMousedOverSide(player))) 
+                    {    
+                    case 2: 
+                        xRadius = 1; yRadius = 1; zRadius = 0; break;
+                    case 3: 
+                        xRadius = 1; yRadius = 1; zRadius = 0; break;
+                    }
+                } else if (BlockHelper.getCurrentMousedOverSide(player) == 4 || BlockHelper.getCurrentMousedOverSide(player) == 5) {
+                    switch(MathHelper.floor_double(BlockHelper.getCurrentMousedOverSide(player)))
+                    {
+                    case 4: 
+                        xRadius = 0; yRadius = 1; zRadius = 1; break;
+                    case 5: 
+                        xRadius = 0; yRadius = 1; zRadius = 1; break;
+                    }
+                } 
+           
             }
             for(int a = x - xRadius; a <= x + xRadius; a++) {
                 for (int b = y - yRadius; b <= y + yRadius; b++) {
@@ -256,7 +272,7 @@ public class ItemDrill extends ItemTool implements IEnergyTool, IEqualityOverrid
         if(!tier.hasModes) return "";
 
         if(isEmpowered(stack))
-            return StatCollector.translateToLocal("rfdrills.1x3x1.mode");
+            return StatCollector.translateToLocal("rfdrills.3x3x1.mode");
         else
             return StatCollector.translateToLocal("rfdrills.1x1x1.mode");
     }
