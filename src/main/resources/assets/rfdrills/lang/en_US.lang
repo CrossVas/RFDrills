@@ -89,7 +89,7 @@ rfdrills.shears_on.mode=Shears: §aOn
 rfdrills.shears_off.mode=Shears: §cOff
 rfdrills.5x5x5.mode=Mode: §a5x5x5
 rfdrills.3x3x3.mode=Mode: §e3x3x3
-rfdrills.1x3x1.mode=Mode: §e1x3x1
+rfdrills.3x3x1.mode=Mode: §e3x3x1
 rfdrills.1x1x1.mode=Mode: §c1x1x1
 
 config.general=General
