@@ -83,7 +83,7 @@ rfdrills.shears_on.mode=Ножницы: §aВкл
 rfdrills.shears_off.mode=Ножницы: §cВыкл
 rfdrills.5x5x5.mode=Режим: §a5x5x5
 rfdrills.3x3x3.mode=Режим: §e3x3x3
-rfdrills.1x3x1.mode=Режим: §e1х3х1
+rfdrills.3x3x1.mode=Режим: §e3х3х1
 rfdrills.1x1x1.mode=Режим: §c1х1х1
 
 config.general=Основное
